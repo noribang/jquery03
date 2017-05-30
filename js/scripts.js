@@ -1,16 +1,15 @@
 $(document).ready(function() {
+	// 1. This is bad code since JS is controlling styling
+	// 2. This is bad code since JS styling cannot be reused  
 	$('button#green').click(function() {
-		$('body').removeClass();
-		$('body').addClass('green-background');
+		$('body').css('background-color', 'green');
 	});
 
 	$('button#yellow').click(function() {
-		$('body').removeClass();
-		$('body').addClass('yellow-background');
+		$('body').css('background-color', 'yellow');
 	});
 
 	$('button#red').click(function() {
-		$('body').removeClass();
-		$('body').addClass('red-background');
+		$('body').css('background-color', 'red');
 	});
 });
